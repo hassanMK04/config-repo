@@ -24,7 +24,7 @@ public class GateWayServiceApplication {
                 .build();
     }
 
-@Bean
+    @Bean
     public DiscoveryClientRouteDefinitionLocator dynamicRoutes(ReactiveDiscoveryClient rdc, DiscoveryLocatorProperties dlp){
         return new DiscoveryClientRouteDefinitionLocator(rdc,dlp);
 }
